@@ -21,11 +21,20 @@
 
 ## 安装
 
+仓库地址：<https://github.com/Jegozhou/dsh-plugin-bidkit>（MIT）
+
+```bash
+git clone https://github.com/Jegozhou/dsh-plugin-bidkit.git ~/dsh-plugin-bidkit
+```
+
+然后在 DSH 会话里把**克隆下来的目录**交给插件管理器（Desktop 的插件页或 `plugin_manager` 工具）：
+
 ```text
-plugin_manager  install_bundle  target: /Volumes/ZHITAI/标书/dsh-plugin-bidkit
+plugin_manager  install_bundle  target: ~/dsh-plugin-bidkit
 ```
 
 安装后侧边栏出现「标书工作台」。工作台数据来自同源只读接口 `/dsh-plugin-bidkit/api/*`。
+本包零运行时依赖，不需要 `npm install`；`test/` 只依赖 Node 内置 `node:test`。
 
 配置（`cordis.patch.yml` 行，用户覆盖补丁层时需重述完整 config）：
 

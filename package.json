@@ -5,7 +5,9 @@
   "type": "module",
   "description": "BidKit: a native DeepSeek Harness plugin for the whole tender-bid lifecycle — structured tender parsing, scored outline planning, long-form section authoring with global fact anchoring, compliance review and one-click .docx export.",
   "license": "MIT",
-  "engines": { "node": ">=22.5" },
+  "engines": {
+    "node": ">=22.5"
+  },
   "icon": "./icon.svg",
   "exports": {
     ".": "./index.js",
@@ -26,7 +28,9 @@
     "fixtures/*.md"
   ],
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,
@@ -39,5 +43,23 @@
   },
   "scripts": {
     "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "tender",
+    "bidding",
+    "procurement",
+    "docx",
+    "mit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jegozhou/dsh-plugin-bidkit.git"
+  },
+  "homepage": "https://github.com/Jegozhou/dsh-plugin-bidkit",
+  "bugs": {
+    "url": "https://github.com/Jegozhou/dsh-plugin-bidkit/issues"
   }
 }
