@@ -1,0 +1,11 @@
+# dependencies (this bundle has none, but keep node_modules out if a tool creates it)
+node_modules/
+
+# test artefacts produced by `node --test` (regenerate with npm test)
+test/out/*.docx
+test/out/
+
+# editor / OS noise
+.DS_Store
+*.log
+*.tmp

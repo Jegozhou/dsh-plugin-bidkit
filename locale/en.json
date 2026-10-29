@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "BidKit — Tender & Bid Workbench",
+    "description": "Parse tender documents into 18 structured items, plan a score-aligned outline, draft unlimited-length sections with locked global facts, run compliance and consistency review, and export a typeset .docx."
+  },
+  "panel": "BidKit",
+  "title": "BidKit Workbench",
+  "tabs": { "parse": "Tender parse", "outline": "Outline", "preview": "Section", "review": "Risk review" },
+  "status": { "coverage": "18-item coverage", "sections": "Sections", "words": "Words", "risks": "Risks", "stars": "★ clauses" },
+  "labels": {
+    "loading": "Loading projects…",
+    "empty": "No bid project yet. Ask the agent to run bid_project_create.",
+    "refresh": "Refresh",
+    "noProject": "Select a project",
+    "noSection": "Pick a section in the outline.",
+    "noReview": "No review yet. Ask the agent to run bid_review.",
+    "blocker": "Blocker",
+    "major": "Major",
+    "minor": "Minor",
+    "export": "Export .docx",
+    "exportedAt": "Exported",
+    "facts": "Locked facts",
+    "unavailable": "Host route unavailable in this composition.",
+    "score": "Score",
+    "evidence": "Evidence",
+    "missing": "Missing",
+    "filled": "Filled",
+    "partial": "Partial",
+    "targetWords": "Target words"
+  }
+}

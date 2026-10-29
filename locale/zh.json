@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "BidKit 标书工作台",
+    "description": "招标文件 18 项结构化解析、按评分标准生成高分目录、基于全局事实锁定的超长正文撰写、合规与一致性风险体检，以及排版级 .docx 一键导出。"
+  },
+  "panel": "标书工作台",
+  "title": "BidKit 标书工作台",
+  "tabs": { "parse": "招标解析", "outline": "目录编排", "preview": "章节预览", "review": "风险审查" },
+  "status": { "coverage": "18 项覆盖", "sections": "章节", "words": "字数", "risks": "风险", "stars": "★ 废标项" },
+  "labels": {
+    "loading": "正在读取标书项目…",
+    "empty": "尚无标书项目，请让智能体执行 bid_project_create。",
+    "refresh": "刷新",
+    "noProject": "请选择一个项目",
+    "noSection": "请在目录中点选一个章节。",
+    "noReview": "尚未体检，请让智能体执行 bid_review。",
+    "blocker": "阻断",
+    "major": "重要",
+    "minor": "提示",
+    "export": "导出 .docx",
+    "exportedAt": "导出于",
+    "facts": "全局事实锁定",
+    "unavailable": "当前组合中 Host 路由不可用。",
+    "score": "分值",
+    "evidence": "依据",
+    "missing": "缺失",
+    "filled": "已覆盖",
+    "partial": "部分",
+    "targetWords": "目标字数"
+  }
+}

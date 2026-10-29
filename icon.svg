@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="BidKit">
+  <defs>
+    <linearGradient id="bk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6fed"/>
+      <stop offset="1" stop-color="#12a3a3"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#bk)"/>
+  <path d="M20 16h18l8 8v24a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4Z" fill="#ffffff" opacity="0.96"/>
+  <path d="M38 16v8h8" fill="none" stroke="#cfe0ff" stroke-width="2.4" stroke-linejoin="round"/>
+  <g stroke="#2f6fed" stroke-width="2.2" stroke-linecap="round">
+    <path d="M23 31h15"/><path d="M23 37h18"/><path d="M23 43h11"/>
+  </g>
+  <circle cx="47" cy="47" r="10" fill="#12a3a3" stroke="#ffffff" stroke-width="2.6"/>
+  <path d="M43 47.2l2.8 2.9 5.2-5.6" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,13 @@
+# BidKit — 招投标全流程工作台（Host + Web 工作台视图）。
+#
+# 一行插入：`id` 是用户 patch 覆盖时使用的行 id，`name` 是安装的包名，
+# `config` 由插件导出的 Config 在激活时校验；用户覆盖必须重述完整 config
+# （patch 的 config 是整体替换，不做深合并）。
+- insert:
+    - id: dsh-plugin-bidkit
+      name: 'dsh-plugin-bidkit'
+      config:
+        dataDir: ''
+        kbDir: ''
+        allowWrite: true
+        defaultTargetWords: 0

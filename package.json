@@ -1,0 +1,43 @@
+{
+  "name": "dsh-plugin-bidkit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BidKit: a native DeepSeek Harness plugin for the whole tender-bid lifecycle — structured tender parsing, scored outline planning, long-form section authoring with global fact anchoring, compliance review and one-click .docx export.",
+  "license": "MIT",
+  "engines": { "node": ">=22.5" },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "fixtures/*.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
