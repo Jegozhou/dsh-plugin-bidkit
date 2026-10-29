@@ -1,5 +1,8 @@
 # dsh-plugin-bidkit
 
+[![tests](https://github.com/Jegozhou/dsh-plugin-bidkit/actions/workflows/test.yml/badge.svg)](https://github.com/Jegozhou/dsh-plugin-bidkit/actions/workflows/test.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 面向招投标全流程的原生 DeepSeek Harness 插件（MIT）。它把"读招标文件 → 生成高分目录 → 写超长正文 → 合规体检 → 导出排版级 Word"做成一整条可在会话里恢复的流水线，并把这套流水线的状态实时呈现为 Harness 里的**标书工作台**。
 
 > Clean-room 实现：不引入独立 Agent 运行时、不引入外部数据库或任务队列、不桥接外部进程。全部能力由 DSH 原生的 Cordis 服务体系承载：`ctx.tools` 注册工具、`ctx.effect` 管理生命周期、`ctx.inject(['webServer'])` 提供工作台只读/操作接口、`ctx.providers` 暴露可组合服务；打开/关闭插件即挂载/卸载全部注册，无残留。

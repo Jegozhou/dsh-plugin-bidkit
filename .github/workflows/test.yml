@@ -1,0 +1,39 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Show runtime
+        run: node -v && npm -v
+
+      - name: Syntax check (host, client, library)
+        run: |
+          node --check index.js
+          node --check client.js
+          for file in lib/*.js; do node --check "$file"; done
+
+      - name: Test (node:test, zero dependencies)
+        run: npm test
